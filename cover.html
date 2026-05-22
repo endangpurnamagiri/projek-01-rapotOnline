@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Rapor Digital - SMA Negeri 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        .cover-card {
+            background-color: #ffffff;
+            border: 8px double #1565c0;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            max-width: 650px;
+            width: 100%;
+            padding: 50px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Garis Ornamen Bingkai Khas Rapor Resmi */
+        .cover-card::before {
+            content: "";
+            position: absolute;
+            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            pointer-events: none;
+        }
+        .instansi-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 800;
+            color: #0d47a1;
+            letter-spacing: 2px;
+            line-height: 1.3;
+        }
+        .rapor-badge {
+            background-color: #f0f4c3;
+            color: #33691e;
+            font-weight: 700;
+            letter-spacing: 4px;
+            border: 2px dashed #33691e;
+            padding: 10px 25px;
+            display: inline-block;
+            border-radius: 6px;
+        }
+        .info-table {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+        }
+        .info-table td {
+            padding: 12px 15px;
+            font-size: 15px;
+        }
+        .logo-tutwuri {
+            width: 110px;
+            height: auto;
+            filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.15));
+        }
+        /* Tombol Dashboard Elegan */
+        .btn-dashboard {
+            background: linear-gradient(45deg, #1e88e5, #1565c0);
+            color: white;
+            font-weight: 600;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(21, 101, 192, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-dashboard:hover {
+            background: linear-gradient(45deg, #1565c0, #0d47a1);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(13, 71, 161, 0.5);
+        }
+        .btn-dashboard:active {
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center py-5">
+        <div class="cover-card text-center">
+            
+            <div class="mb-4">
+                <img src="images/OIP-removebg-preview.png" alt="Logo Tut Wuri" class="logo-tutwuri mb-4">
+                <h4 class="text-muted fw-semibold small text-uppercase mb-1">Rapor Peserta Didik</h4>
+                <h2 class="instansi-title text-uppercase mb-2">SMA Negeri 1 <br>Kota Jakarta</h2>
+            </div>
+            
+            <hr class="mx-5 my-4" style="border-top: 2px solid #1565c0; opacity: 0.2;">
+
+            <div class="my-4">
+                <span class="rapor-badge text-uppercase fs-5 mb-2">Capaian Hasil Belajar</span>
+                <p class="text-muted small">Kurikulum Merdeka / Lajur MIPA</p>
+            </div>
+
+            <div class="info-table text-start my-4 mx-2">
+                <table class="table table-borderless mb-0">
+                    <tbody>
+                        <tr>
+                            <td class="text-muted" style="width: 35%;">Nama Siswa</td>
+                            <td class="fw-bold" style="width: 5%;">:</td>
+                            <td class="fw-bold text-dark">BUDI SANTOSO</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">NISN / NIS</td>
+                            <td class="fw-semibold">:</td>
+                            <td class="fw-semibold">0045678912 / 23241015</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Kelas</td>
+                            <td class="fw-semibold">:</td>
+                            <td class="fw-semibold">XI MIPA 2</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Tahun Ajaran</td>
+                            <td class="fw-semibold">:</td>
+                            <td class="fw-semibold">2025/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-muted small mt-4 mb-4">
+                <i class="bi bi-info-circle me-1"></i> Silakan klik tombol di bawah untuk melihat rincian nilai.
+            </p>
+
+            <div class="d-grid gap-2 col-sm-8 mx-auto">
+                <a href="dashboard.html" class="btn btn-dashboard btn-lg text-decoration-none">
+                    Buka Dashboard Rapor <i class="bi bi-arrow-right-circle-fill ms-2"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
